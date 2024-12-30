@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2021", // Especifica o alvo para a versão do ECMAScript
+    "module": "CommonJS", // Módulo CommonJS para compatibilidade com o Node.js
+    "outDir": "./dist", // A pasta de saída para os arquivos compilados
+    "rootDir": "./src", // A raiz do código fonte é a pasta "src"
+    "strict": true, // Habilitar todas as verificações de tipo do TypeScript
+    "esModuleInterop": true, // Habilitar interoperabilidade de módulos ES
+    "skipLibCheck": true, // Ignorar a verificação de tipos em bibliotecas externas
+    "resolveJsonModule": true, // Permitir importação de arquivos JSON
+    "forceConsistentCasingInFileNames": true, // Garantir consistência no nome dos arquivos
+    "noImplicitAny": true, // Impedir uso de "any" implícito
+    "experimentalDecorators": true, // Habilitar suporte a decoradores
+    "emitDecoratorMetadata": true, // Emitir metadados para os decoradores
+    "declaration": true, // Gerar arquivos de declaração (.d.ts)
+    "sourceMap": true, // Gerar arquivos de mapa de origem para depuração
+    "skipDefaultLibCheck": true // Ignorar verificação de tipos em arquivos de bibliotecas padrão,
+  },
+  "include": [
+    "src/**/*.ts",
+    "MyProject/src/data-source.ts",
+    "MyProject/src/index.ts",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ], // Incluir os arquivos na pasta "src"
+  "exclude": ["node_modules", "dist", "**/*.test.ts"] // Excluir "node_modules", "dist", e testes
+}
